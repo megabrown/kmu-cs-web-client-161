@@ -24,8 +24,33 @@ li:first-child{
 .img_li{
 	padding-top: 90px;
 }
-li a:hover:first-child{
+
+#hm a:hover{
 	text-decoration: underline;
 	color: #DDA0DD;
 	background: url(home-icon.jpeg) no-repeat;
+}
+
+#ch a:hover{
+	text-decoration: underline;
+	color: #DDA0DD;
+	background: url(char-icon.jpeg) no-repeat;
+}
+
+#pp a:hover{
+	text-decoration: underline;
+	color: #DDA0DD;
+	background: url(popo-icon.jpeg) no-repeat;
+}
+
+#op a:hover{
+	text-decoration: underline;
+	color: #DDA0DD;
+	background: url(outp-icon.jpeg) no-repeat;
+}
+
+#ft a:hover{
+	text-decoration: underline;
+	color: #DDA0DD;
+	background: url(frtm-icon.jpeg) no-repeat;
 }

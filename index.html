@@ -5,6 +5,8 @@
     <link rel="stylesheet" type="text/css" href="navigation-bar.css">
     <link rel="stylesheet" type="text/css" href="img.css">
     <link rel="stylesheet" type="text/css" href="text.css">
+    <script type="text/javascript" src="http://code.jquery.com/jquery-2.2.3.min.js"></script>
+    <script type="text/javascript">location.href="#home"</script>
     <style>
     body{
 		background-image: url("leaf-background-.jpeg");
@@ -14,22 +16,30 @@
   </head>
   <body>
   <ul>
-  	<li style="float:top"><a href="#home">Jerome's Page</a></li>
-  	<li><a href="#character">Character</a></li>
-    <li><a href="#portpolio">PortPolio</a></li>
-    <li><a href="#output">Output</a></li>
-    <li><a href="#freetime">FreeTime</a></li>
-    <li class="img_li"><a href="https://www.instagram.com/effectorjerome"><img src="insta.jpeg" width="160"></a></li>
-    <li><a href="http://blog.naver.com/ujlujlv"><img src="naver.jpeg" width="160"></a></li>
+  	<li id="hm" style="float:top"><a href="#home">Jerome's Page</a></li>
+  	<li id="ch"><a href="#character">Character</a></li>
+    <li id="pp"><a href="#portpolio">PortPolio</a></li>
+    <li id="op"><a href="#output">Output</a></li>
+    <li id="ft"><a href="#freetime">FreeTime</a></li>
+    <li class="img_li"><a href="https://www.instagram.com/effectorjerome"><img id="insta" src="insta.jpeg" width="160"></a></li>
+    <li class="img_li2"><a href="http://blog.naver.com/ujlujlv"><img id="naver" src="naver.jpeg" width="160"></a></li>
   </ul>
   <div id="home">
-  	<img class="main-img" src="main.jpeg">
+    <img class="main-img" src="main2.jpeg">
+      <img class="mouse" src="mouse.jpeg">
+      <img class="wifi" src="wifi.jpeg">
   </div>
   <div id="character">
-  		<img class="logo" src="char_logo.jpeg">
-  		<p><img class="img" src="char_main.jpg" width="640" height="400"><br></p>
+    <img id="char_st" class="logo" src="char_logo.jpeg">
+    <section class="blocked">
+      <div id="card" class=" ">
+  		  <figure class="char_ft"><img id="card_img" src="char_main.jpg"></figure>
+        <figure class="char_bk"><img id="card_img" src="freetimepics/IMG_6250.jpg"></figure>
+      </div>
+    </section>
+  		<br>
   		<p class="text"> I'm Jerome Lee. My major is Electronic Engineering, but studying <em>SW programming and HTML/CSS/Javascript</em> recently. Also, you can infer from the above photo, i do many kinds of work or play. If you wonder what it is, go to the
-  			<a href="#freetime">FreeTime</a> page.
+  			<a id="in_txt" href="#freetime">FreeTime</a> page.
   		</p><br><br><br><br>
   </div>
   <div id="portpolio">
@@ -44,11 +54,36 @@
   </div>
   <div id="output">
   	<img class="logo" src="output_logo.jpeg">
-  	<p class="text"> Not readied for this area.
-  	</p><br><br><br><br>
+  	<table id="listed">
+      <tr>
+      <th><img id="0" class="listed_img" src="freetimepics/freetime_main.jpg"></th>
+      <th><img id="1" class="listed_img" src="freetimepics/IMG_6067-2.jpg"></th>
+      <th><img id="2" class="listed_img" src="output_main.jpg"></th>
+      <th><img id="3" class="listed_img" src="freetimepics/IMG_6250.jpg"></th>
+    </tr>
+      <tr class="line24">
+        <td><img id="0c" class="listed_txt" src="0c.jpg"></td>
+        <td><img id="1c" class="listed_txt" src="1c.jpg"></td>
+        <td><img id="2c" class="listed_txt" src="2c.jpg"></td>
+        <td><img id="3c" class="listed_txt" src="1c.jpg"></td>
+    </tr>
+      <tr>
+      <td><img id="4" class="listed_img" src="freetimepics/IMG_6306.jpg"></td>
+      <td><img id="5" class="listed_img" src="pp_main.jpg"></td>
+      <td><img id="6" class="listed_img" src="freetimepics/IMG_6260-2.jpg"></td>
+      <td><img id="7" class="listed_img" src="freetimepics/IMG_0729-.jpg"></td>
+    </tr>
+      <tr class="line24">
+        <td><img id="4c" class="listed_txt" src="1c.jpg"></td>
+        <td><img id="5c" class="listed_txt" src="5c.jpg"></td>
+        <td><img id="6c" class="listed_txt" src="1c.jpg"></td>
+        <td><img id="7c" class="listed_txt" src="7c.jpg"></td>
+    </tr>
+    </table>
+    <p class="text"></p><br><br><br><br>
   </div>
-  <div id="freetime">
-  	<img class="logo" src="free_logo.jpeg">
+  <div>
+  	<img id="freetime" class="logo" src="free_logo.jpeg">
     <img class="img" src="freetimepics/free1-vert.jpg">
     <p class="text"> I took part in "Hi Seoul Festival" as a volunteer. This festival is holding an art exhibition in attractions near Seoul City Hall. Many foreign artists came to have their work displayed. Also, volunteers' activity is the most important. We help the arts installed, manage whole festival at every place, and make the festival more fun by perform flashmob and enjoy this party with audiences. It was really great time to communicate lots of people, and have many friends while we ready for this event together.
     </p><br><br><br><br><br>
@@ -59,5 +94,6 @@
     <p class="text"> "Idea Factory Supporters" was a very hard activity. Its mainly for marketing <em>Idea Factory</em>. We made some SNS articles, took photo and video what we do, planned and held a party there. No help from Idea Factory's executives or officers. Supporters did all the works from planning to perform and finish. Nothing easy, but i showed what i can do, and figured out how marketing offices work. It's one of my best memory.
     </p><br><br><br><br><br>
   </div>
+  <script type="text/javascript" src="functions.js"></script>
   </body>
 </html>

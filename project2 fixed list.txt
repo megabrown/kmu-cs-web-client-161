@@ -1,0 +1,15 @@
+1. navigation bar 요소들에 id를 부여하여 css 각각 적용
+
+2. navigation bar 요소들에 애니매이션 효과 부여
+
+3. 내부링크 클릭시 스크롤 이동 부드럽게 만듬
+   (본문 내용 중의 링크 포함)
+
+4. "output"에 요소를 추가하고 애니매이션 효과 부여
+   table로 구성, 일부는 slideToggle과 fadeToggle 사용
+
+5. refresh 하면 home 위치로 돌아옴
+
+6. home 화면 로딩 후, 홈 애니매이션 순차진행
+
+7. character paragraph의 image에 flip 효과 부여
